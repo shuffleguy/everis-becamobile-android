@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="@color/half_grey">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -22,12 +22,13 @@
 
             <TextView
                 android:id="@+id/nomeApk"
+                android:background="@color/black"
                 android:text="@string/filmologia"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textStyle="bold"
-                android:textSize="32dp"
+                android:textSize="32sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -35,7 +36,9 @@
                 android:id="@+id/rv_list"
                 android:layout_marginTop="32dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
