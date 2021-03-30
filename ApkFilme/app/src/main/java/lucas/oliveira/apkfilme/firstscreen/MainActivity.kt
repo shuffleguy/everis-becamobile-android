@@ -16,11 +16,10 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        getMovie {  }
+       // getMovie {  }
     }
 }
-
-private fun getMovie(callback: (List<Movie>) -> ): Unit{
+private fun getMovie(callback: (List<Movie>) ->  Unit{
 
     val api = MovieApi.retrofit.create(MovieInterfaceKey::class.java)
     api.movieList().enqueue(object : Callback<MovieTrack>{
