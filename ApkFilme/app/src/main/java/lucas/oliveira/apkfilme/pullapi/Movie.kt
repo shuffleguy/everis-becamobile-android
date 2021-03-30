@@ -13,7 +13,7 @@ data class Movie (
     val title : String = "",
 
     @SerializedName("poster_path")
-    val poster : String = "",
+    val poster : String = "",//https://image.tmdb.org/t/p/w500/ + poster_path
 
     @SerializedName("genre")
     val genre : String = "",
