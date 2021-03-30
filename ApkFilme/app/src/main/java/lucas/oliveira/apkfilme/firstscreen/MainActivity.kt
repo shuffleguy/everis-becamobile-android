@@ -14,7 +14,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,17 +26,17 @@ class MainActivity : AppCompatActivity(){
         }
 
     }
-}
-private fun getMovie(callback: (List<Movie>) ->  Unit){
 
-    val api = MovieApi.retrofit.create(MovieInterfaceKey::class.java)
-    api.movieList().enqueue(object : Callback<MovieTrack>{
-        override fun onFailure(call: Call<MovieTrack>, t: Throwable) {
-        }
+    private fun getMovie(callback: (List<Movie>) -> Unit) {
 
-        override fun onResponse(call: Call<MovieTrack>, response: Response<MovieTrack>) {
-            return callback(response.body()!!.movies)
-        }
+        val api = MovieApi.retrofit.create(MovieInterfaceKey::class.java)
+        api.movieList().enqueue(object : Callback<MovieTrack> {
+            override fun onFailure(call: Call<MovieTrack>, t: Throwable) {
+            }
+
+            override fun onResponse(call: Call<MovieTrack>, response: Response<MovieTrack>) {
+                return callback(response.body()!!.movies)
+            }
+        })
     }
-    )
 }
