@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.movie_card.view.*
 import lucas.oliveira.apkfilme.R
 import lucas.oliveira.apkfilme.pullapi.Movie
 
-class MovieAdapter (
+class MovieAdapter (// junto na main >>>>>>>{movie : List<Movie> -> recycler cm adapter!!!!!
     private val movies : List<Movie>
 
         ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
