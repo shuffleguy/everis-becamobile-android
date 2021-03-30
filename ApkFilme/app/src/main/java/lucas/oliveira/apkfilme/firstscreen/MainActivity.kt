@@ -1,8 +1,8 @@
-package lucas.oliveira.apkfilme
+package lucas.oliveira.apkfilme.firstscreen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toolbar
+import lucas.oliveira.apkfilme.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
