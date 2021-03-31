@@ -7,4 +7,7 @@
     <string name="popularity">popularity</string>
     <string name="the_movie_name">THE MOVIE NAME</string>
     <string name="poster">poster</string>
+    <string name="genre">Genre</string>
+    <string name="voteaverage">vote_average</string>
+    <string name="m_dia_de_notas">MÉDIA DE NOTAS</string>
 </resources>

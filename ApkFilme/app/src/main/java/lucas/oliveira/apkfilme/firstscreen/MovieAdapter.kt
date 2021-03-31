@@ -18,6 +18,7 @@ class MovieAdapter (
         private val IMAGE_BASE = "https://image.tmdb.org/t/p/w500/"
         fun bindMovie(movie: Movie) {
             itemView.movie_name_card.text = movie.title
+            itemView.movie_vote_average.text = movie.vote_average
             Glide.with(itemView).load(IMAGE_BASE + movie.poster).into(itemView.movie_poster_card)
         }
     }
