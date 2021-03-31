@@ -1,4 +1,4 @@
-package lucas.oliveira.apkfilme.geturl
+package lucas.oliveira.apkfilme.data
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

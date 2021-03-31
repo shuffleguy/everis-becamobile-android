@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApkFilme">
         <activity android:name=".secondscreen.MovieDetails"></activity>
-        <activity android:name=".firstscreen.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

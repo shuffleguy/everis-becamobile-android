@@ -1,6 +1,6 @@
-package lucas.oliveira.apkfilme.geturl
+package lucas.oliveira.apkfilme.interfaces
 
-import lucas.oliveira.apkfilme.pullapi.MovieTrack
+import lucas.oliveira.apkfilme.data.MovieTrack
 import retrofit2.Call
 import retrofit2.http.GET
 

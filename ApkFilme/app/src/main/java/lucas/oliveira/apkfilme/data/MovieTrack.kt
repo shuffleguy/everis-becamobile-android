@@ -1,9 +1,8 @@
-package lucas.oliveira.apkfilme.pullapi
+package lucas.oliveira.apkfilme.data
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
-import lucas.oliveira.apkfilme.pullapi.Movie
 
 @Parcelize
 data class MovieTrack(

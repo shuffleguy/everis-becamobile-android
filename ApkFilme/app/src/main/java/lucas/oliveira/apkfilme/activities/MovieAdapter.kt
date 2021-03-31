@@ -1,4 +1,4 @@
-package lucas.oliveira.apkfilme.firstscreen
+package lucas.oliveira.apkfilme.activities
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.movie_card.view.*
 import lucas.oliveira.apkfilme.R
-import lucas.oliveira.apkfilme.pullapi.Movie
+import lucas.oliveira.apkfilme.data.Movie
 
 class MovieAdapter (
     private val movies : List<Movie>
+
 
         ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
 

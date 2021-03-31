@@ -1,4 +1,4 @@
-package lucas.oliveira.apkfilme.pullapi
+package lucas.oliveira.apkfilme.data
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
