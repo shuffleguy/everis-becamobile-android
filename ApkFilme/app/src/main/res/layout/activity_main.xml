@@ -21,7 +21,7 @@
 
             <TextView
                 android:id="@+id/nomeApk"
-                android:background="@color/black"
+                android:background="@drawable/new_layout"
                 android:text="@string/filmologia"
                 android:textColor="@color/yellow"
                 android:textAlignment="center"

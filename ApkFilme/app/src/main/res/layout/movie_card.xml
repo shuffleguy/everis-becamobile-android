@@ -26,9 +26,9 @@
 
     <TextView
         android:id="@+id/movie_vote_average"
-        android:layout_width="127dp"
-        android:layout_height="63dp"
-        android:background="@color/half_grey"
+        android:layout_width="88dp"
+        android:layout_height="66dp"
+        android:background="@drawable/new_layout"
         android:text="@string/voteaverage"
         android:textAlignment="center"
         android:textColor="@color/yellow"
