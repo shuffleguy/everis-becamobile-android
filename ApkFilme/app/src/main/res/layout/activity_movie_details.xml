@@ -16,7 +16,7 @@
         android:id="@+id/nomeApk"
         android:background="@color/black"
         android:text="@string/filmologia"
-        android:textColor="@color/white"
+        android:textColor="@color/yellow"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
 
 
         <ImageView
-            android:id="@+id/backdrop"
+            android:id="@+id/movie_backdrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:srcCompat="@tools:sample/avatars"
@@ -65,7 +65,6 @@
             android:text="@string/overview"
             android:textAlignment="inherit"
             android:maxLines="5"
-            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="20sp"
             />
