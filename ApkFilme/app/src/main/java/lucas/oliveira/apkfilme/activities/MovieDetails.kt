@@ -8,33 +8,32 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import kotlinx.android.synthetic.main.activity_movie_details.*
 import lucas.oliveira.apkfilme.R
+import lucas.oliveira.apkfilme.data.Movie
 
 class MovieDetails : AppCompatActivity() {
 
+    private var extras : String? = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_details)
 
 
-//        getExtra()
+        getExtra()
 //        bindViews()
-//    }
-//
-//    private fun getExtra() {
-//        val extras = intent.extras
-//        if(extras != null){
-//            bindViews(extras)
-//             }else {
-//                 finish()
-//        }
-//    }
-//
+    }
+
+    private fun getExtra() {
+        if(intent.extras != null){
+            val movie = intent.getParcelableExtra("Movie")as? Movie
+            extras = movie?.id
+        }
+    }
+
 //    private fun bindViews(extras: Bundle){
 //
 //
 //        }
-//
-//
+
+
     }
-}

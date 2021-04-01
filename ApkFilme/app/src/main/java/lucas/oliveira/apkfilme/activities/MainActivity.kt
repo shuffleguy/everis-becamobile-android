@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), ClickInterface{
         rv_list.layoutManager = LinearLayoutManager(this)
         rv_list.setHasFixedSize((true))
         getMovie { movies: List<Movie> ->
-            rv_list.adapter = MovieAdapter(movies)
+            rv_list.adapter = MovieAdapter(movies, this)
         }
 
     }
