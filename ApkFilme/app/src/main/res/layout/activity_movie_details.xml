@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
+
     <TextView
         android:id="@+id/nomeApk"
         android:background="@color/black"
@@ -24,82 +25,90 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/movie_poster_card"
-        android:layout_width="411dp"
-        android:layout_height="380dp"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeApk">
 
-
-        <ImageView
-            android:id="@+id/movie_backdrop"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/movie_poster_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/poster" />
+            android:layout_height="222dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomeApk">
 
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/movie_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/poster"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="141dp"
+                android:layout_height="121dp"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:background="@color/half_grey"
             android:text="@string/movie_name"
-            android:textColor="@color/white"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="32sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/movie_overview"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
+            android:layout_height="321dp"
             android:background="@color/half_grey"
+            android:maxLines="5"
             android:text="@string/overview"
             android:textAlignment="inherit"
-            android:maxLines="5"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/release_date"
-                android:layout_width="wrap_content"
-                android:layout_height="131dp"
-                android:layout_weight="1"
-                android:background="@color/half_grey"
-                android:gravity="center"
-                android:text="@string/release_date"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-            <TextView
-                android:id="@+id/popularity"
-                android:background="@color/half_grey"
-                android:text="@string/popularity"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="15sp"
-                android:layout_width="wrap_content"
-                android:layout_height="131dp"/>
+                <TextView
+                    android:id="@+id/release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="131dp"
+                    android:layout_weight="1"
+                    android:background="@color/half_grey"
+                    android:gravity="center"
+                    android:text="@string/release_date"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/popularity"
+                    android:background="@color/half_grey"
+                    android:text="@string/popularity"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="131dp"/>
 
-        </LinearLayout>
+            </LinearLayout>
 
     </LinearLayout>
 
