@@ -8,7 +8,6 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.movie_card.view.*
 import lucas.oliveira.apkfilme.R
 import lucas.oliveira.apkfilme.data.Movie
-import lucas.oliveira.apkfilme.activities.MainActivity
 import lucas.oliveira.apkfilme.interfaces.ClickInterface
 
 class MovieAdapter (

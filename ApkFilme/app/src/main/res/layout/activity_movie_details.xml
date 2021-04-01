@@ -61,10 +61,11 @@
             android:layout_height="70dp"
             android:background="@color/half_grey"
             android:text="@string/movie_name"
+            android:maxLines="5"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
@@ -72,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="321dp"
             android:background="@color/half_grey"
+            android:layout_marginTop="5dp"
             android:maxLines="5"
             android:text="@string/overview"
             android:textAlignment="inherit"
